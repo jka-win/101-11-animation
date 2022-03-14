@@ -1,6 +1,7 @@
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -28,7 +29,8 @@ header h1 {
     animation: pulse;
     animation-duration: 0.01s;
     animation-iteration-count: infinite;
-    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
 }
 
 nav * {
