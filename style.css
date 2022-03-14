@@ -1,0 +1,74 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+}
+
+body > * {
+    padding: 0px 20px;
+}
+
+.theme-light {
+    background-color: lightsteelblue;
+    color: indigo;
+}
+
+.theme-dark {
+    background-color: darkslateblue;
+    color: lightgray;
+}
+
+header h1 {
+    animation: pulse;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+nav * {
+    margin: 5px;
+    text-align: center;
+}
+
+nav a:link, nav a:visited {
+    color: inherit;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    flex: 1;
+}
+
+.fashion-item {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    height: 100px;
+}
+
+.fashion-item:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.fashion-item img {
+    width: 150px;
+}
+
+.fashion-item p {
+    margin: 0px 20px;
+}
+
+footer {
+    font-style: italic;
+}
